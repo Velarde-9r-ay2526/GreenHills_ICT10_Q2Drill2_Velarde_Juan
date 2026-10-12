@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Best Grade Students Checker</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module"
+            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #17152e, #242b55, #111827);
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+            padding: 35px 28px;
+            text-align: center;
+            background: #1d2038;
+            border: 1px solid #7167ff;
+            border-radius: 18px;
+            box-shadow: 0 0 25px #7167ff35;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #a99cff;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            margin: 10px 0 25px;
+            color: #b8bdd8;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        input[type="text"] {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 14px;
+            color: white;
+            background: #111426;
+            border: 1px solid #45496c;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #a99cff;
+            box-shadow: 0 0 8px #7167ff55;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 13px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 7px;
+            background: linear-gradient(90deg, #7167ff, #a36bff);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            opacity: 0.85;
+        }
+
+        #div1 {
+            margin-top: 22px;
+            padding: 14px;
+            min-height: 45px;
+            border-radius: 8px;
+            background: #131629;
+            color: #d8d5ff;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #898eaf;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">🏆</div>
+
+        <h1>GRADE STAR CHECKER</h1>
+        <p class="subtitle">STUDENT VERIFICATION SYSTEM</p>
+
+        <form onsubmit="return false;">
+            <input type="text" id="fname"
+                   placeholder="Enter your first name">
+
+            <input type="text" id="lname"
+                   placeholder="Enter your last name">
+
+            <input type="button" py-click="get_name"
+                   value="CHECK NAME">
+        </form>
+
+        <div id="div1">
+            Enter your name to check the student list.
+        </div>
+
+        <footer> BEST GRADE STUDENTS</footer>
+    </div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
